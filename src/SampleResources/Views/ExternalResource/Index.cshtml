@@ -1,0 +1,8 @@
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+@{
+    ViewData["Title"] = "External View";
+}
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+<p>@Localizer["Use this area to provide additional information."] @ViewBag.ControllerLocalizer</p>
